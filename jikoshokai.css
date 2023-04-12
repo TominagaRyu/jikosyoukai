@@ -1,0 +1,184 @@
+/*
+	自己紹介サイトのスタイルシート
+	2023.4.10
+	Ryu Tominaga
+*/
+
+@charset "utf-8";
+
+/* ページ全体のCSS指定 */
+*{
+	margin:0px;
+	padding:0px;
+}
+/* body{
+	background-color:#f9d0f7;
+} */
+
+.haikei{
+	background-image:url(./gra.jpg) ;
+    /* background-size: auto; */
+}
+
+#container{
+	width:760px;
+	margin:auto;
+	background-color: aqua;
+	border-left:5px solid #3003fc;
+	border-right:5px solid #3003fc;
+}
+
+/* ヘッダーのCSS指定 */
+.header {
+	background-color: #333; /* 背景色 */
+	color: #fff; /* 文字色 */
+	padding: 10px; /* パディング */
+	text-align: center; /* 中央揃え */
+	font-size: 24px; /* フォントサイズ */
+  }
+
+
+#title-words{
+    background-color: rgb(166, 247, 5);
+	padding-top:30px;
+    padding-bottom: 30px;
+	text-align:center;
+	color:#127de8;
+	font-size:30pt;
+	font-weight:bold;
+
+    border-radius: 50%;
+}
+
+/* リンクメニューのCSS指定 */
+nav{
+	background-image:url("./img/menu-back.png");
+	height:34px;
+    border: 1px solid rgb(54, 47, 47);
+    background-color: #dfee0a;
+    box-shadow:1px 1px 3px #000000;
+}
+nav ul{			/* li項目を横方向に均等割付（項目数可変） */
+	list-style-type:none;
+	margin-bottom:0px;
+	height:30px;
+	text-align:justify;
+}
+nav ul:after{
+	content:"";
+	width:100%;
+	line-height:0px;
+	display:inline-block;
+	height:0px;
+	margin-bottom:0px;
+}
+nav li{
+	height:30px;
+	padding:4px;
+	text-align:center;
+	display:inline-block;
+}
+nav a{
+	color:#FFFFFF;
+	font-size:12pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+nav a:hover{
+	color:rgb(252, 8, 187);
+}
+
+/* メインコンテンツのCSS指定 */
+#main{
+	padding:30px;
+}
+
+.img{
+    display:inline-block;
+    align-items: right  ;
+    vertical-align: top;
+}
+
+/* 各構成要素のCSS指定 */
+/* 見出し関連 */
+h1{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:24pt;
+	color:#e9f903;
+	background-color:#33adff;
+	border-radius:5px;
+	border-left:solid 10px #000000;
+	border-right:solid 10px #000000;
+	padding:5px 7px;
+	margin-bottom:30px;
+	box-shadow:4px 4px 10px #999999;
+	letter-spacing:1pt;
+}
+h2{
+	font-family:'ＭＳ Ｐゴシック';
+	font-size:18pt;
+	border-left:solid 8px #006666;
+	border-bottom:solid 3px #006666;
+	padding-left:5px;
+	padding-bottom:2px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+h3{
+	font-family:sans-serif;
+	font-size:14pt;
+	border:solid 1px #000000;
+	border-radius:5px;
+	padding:1px 10px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+
+/* リンク関連 */
+a:link{
+	text-decoration:rgb(1, 172, 13);
+	color:blue;
+}
+a:visited{
+	color:blue;
+}
+a:hover{
+	color:#FF0000;
+}
+#img{
+    margin-right:60px;
+
+}
+
+/* 表関連 */
+table{
+	border-collapse:collapse;
+}
+caption{
+	caption-side:bottom;
+	font-weight:bold;
+	padding-top:5px;
+	text-align:right;
+	font-size:11pt;
+}
+th,td{
+	border:solid 2px #000000;
+	padding:5px;
+}
+td{
+	text-align:left;
+}
+thead{
+	background-color:#336666;
+	color:#FFFFFF;
+}
+
+/* フッターのCSS指定 */
+footer{
+	background-color:#000000;
+	padding:10px 0px;
+	font-size:10pt;
+	text-align:center;
+	color:#FFFFFF;
+}
